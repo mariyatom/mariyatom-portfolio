@@ -1,0 +1,57 @@
+.projects-container {
+  min-height: 100vh;
+  background-color: #3a5094;
+  padding: 2rem;
+  width: 100%;
+  margin: 2rem auto;
+  color: white;
+  
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+
+  .tab-navigation {
+    display: flex;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #445599;
+
+    button {
+      background: none;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #00a884;
+      }
+
+      &.active {
+        color: #00a884;
+        border-bottom: 2px solid #00a884;
+      }
+    }
+  }
+
+  .project-content {
+    background-color: #2e408a;
+    padding: 2rem;
+    border-radius: 8px;
+
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  }
+}
