@@ -6,15 +6,14 @@ const About = () => {
       <div className="text-section">
         <h2>About Me.</h2>
         <p>
-          In August 2024, I transitioned from my background in fashion and store
-          management into full-stack software engineering. While I loved
-          completing my Bachelor of Design at AUT, I found that I needed to
-          balance my creativity with an academic outlet. I was really excited to
-          discover coding! Full-stack development has given me a fantastic blend
-          of design and using my analytical skills. I chose to study at Dev
-          Academy Aotearoa because the intensive nature of the course really
-          appealed to me. I love the challenge of problem-solving and analyzing
-          code, consistently striving to improve and learn from those around me.
+          Hi, I’m Mariya — a full-stack developer skilled in both front-end and
+          back-end technologies. I recently completed my React training at Dev
+          Academy Aotearoa (Level 6). My tech journey began after earning my
+          Electronics and Communications Engineering degree. I built a food
+          ordering system using Spring Boot, Angular, and MySQL. I also worked
+          in Japan modernizing COBOL systems and improving task automation. Now
+          in New Zealand, I’m excited to return to tech and build impactful
+          digital solutions.
         </p>
         <div className="interests">
           <button className="interest-button">Aerials</button>
@@ -26,7 +25,7 @@ const About = () => {
       </div>
       <div className="image-section">
         <img
-          src="/images/profile.jpg"
+          src="/client/public/assets/mariya.WebP"
           alt="Your Profile Picture"
           className="profile-image"
         />

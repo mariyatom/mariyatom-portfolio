@@ -26,8 +26,8 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 2rem;
-  background-color: #2e408a;
+  padding: 2rem 3rem;
+    background-color:rgb(10 34 106 / 38%);
   color: white;
   position: fixed;
   width: 100%;
@@ -37,7 +37,7 @@ body {
 
 .portfolio-title {
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .nav-links a {
@@ -45,7 +45,7 @@ body {
   color: white;
   cursor: pointer;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .hero-section {
@@ -54,7 +54,7 @@ body {
   justify-content: center; /* Center content vertically */
   align-items: flex-start; /* Align text to the left */
   padding: 8rem 2rem; /* Add more padding for the hero section */
-  max-width: 960px;
+  max-width: 1133px;
   width: 90%;
 }
 
@@ -121,4 +121,19 @@ body {
 }
 #contact {
   background-color: #3a5094;
+}
+.logo {
+  font-size: 20px;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+.bounce {
+  animation: bounce 2s ease-in-out infinite;
 }

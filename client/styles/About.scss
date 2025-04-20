@@ -12,7 +12,9 @@
 }
 
 .text-section {
-  max-width: 600px;
+  max-width: 771px;
+  background-color: #504646;
+  padding: 20px;
 
   h2 {
     font-size: 3rem;
@@ -21,7 +23,7 @@
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.6;
   }
 
@@ -51,6 +53,6 @@
 
 .image-section {
   img.profile-image {
-    width: 280px;
-    height: 280px
+    width: 344px;
+    height: 343px;
   }}

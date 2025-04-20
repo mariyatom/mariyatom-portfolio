@@ -1,12 +1,12 @@
 const Landing = () => {
   return (
     <div className="landing-page">
-      <section className="hero-section">
+      <section className="hero-section bounce">
         <div className="hero-content">
           <h1>Mariya Tom.</h1>
           <p>
             &lt;Full-Stack Software Developer | Bachelor of Electronics and
-            Communication Engineering;
+            Communication Engineering&gt;
           </p>
           <div className="social-links">
             <button className="social-button github">Github</button>
