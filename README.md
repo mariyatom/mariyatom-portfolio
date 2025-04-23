@@ -33,3 +33,10 @@ You can find the server running on [http://localhost:3000](http://localhost:3000
 
 ---
 [Provide feedback on this repo](https://docs.google.com/forms/d/e/1FAIpQLSfw4FGdWkLwMLlUaNQ8FtP2CTJdGDUv6Xoxrh19zIrJSkvT4Q/viewform?usp=pp_url&entry.1958421517=boilerplate-fullstack)
+
+#installation
+
+npm install react-scroll
+
+npm install --save-dev @types/react-scroll
+

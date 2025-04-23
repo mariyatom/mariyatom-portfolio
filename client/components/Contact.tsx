@@ -1,0 +1,63 @@
+import emailjs from '@emailjs/browser'
+import '../styles/Contact.scss' // Create this SCSS file
+import { useRef } from 'react'
+
+const Contact = () => {
+  const form = useRef<HTMLFormElement | null>(null)
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+
+    if (!form.current) return
+
+    emailjs
+      .sendForm(
+        'service_vrucwmk',
+        'template_c0jr7ze',
+        form.current,
+        'h7n8FrEPsDt2OIQbB'
+      )
+      .then(
+        (result) => {
+          alert('Message sent successfully!')
+          form.current?.reset()
+        },
+        (error) => {
+          alert('Failed to send message. Please try again later.')
+        }
+      )
+  }
+
+  return (
+    <div className="contact-container">
+      <h2>Contact Me</h2>
+      <form ref={form} onSubmit={sendEmail} className="contact-form">
+        <div className="form-group">
+          <label htmlFor="name">Name*</label>
+          <input type="text" name="user_name" required />
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">Email*</label>
+          <input type="email" name="user_email" required />
+        </div>
+        <div className="form-group">
+          <label htmlFor="phone">Phone*</label>
+          <input type="text" name="user_phone" required />
+        </div>
+        <div className="form-group">
+          <label htmlFor="subject">Subject*</label>
+          <input type="text" name="subject" required />
+        </div>
+        <div className="form-group">
+          <label htmlFor="message">Message*</label>
+          <textarea name="message" rows={5} required />
+        </div>
+        <button type="submit" className="send-button">
+          Send Message
+        </button>
+      </form>
+    </div>
+  )
+}
+
+export default Contact

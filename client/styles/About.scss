@@ -1,0 +1,58 @@
+.about-container {
+  height: 100vh;
+  background-color: #3c4c92;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 0 60px;
+  font-family: 'Space Grotesk', sans-serif;
+  flex-wrap: wrap;
+}
+
+.text-section {
+  max-width: 771px;
+  background-color: #504646;
+  padding: 20px;
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .interests {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    .interest-button {
+      background-color: #fff;
+      color: #3c4c92;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: 500;
+      font-size: 1rem;
+      cursor: default;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+.image-section {
+  img.profile-image {
+    width: 344px;
+    height: 343px;
+  }}
