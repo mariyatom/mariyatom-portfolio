@@ -25,7 +25,7 @@ const About = () => {
       </div>
       <div className="image-section">
         <img
-          src="/client/public/assets/mariya.WebP"
+          src="/assets/mariya.WebP"
           alt="Your Profile Picture"
           className="profile-image"
         />

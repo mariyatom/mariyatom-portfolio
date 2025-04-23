@@ -32,11 +32,19 @@ const Projects = () => {
             <p>Click on a tab to find out more!</p>
           </div>
         )
-      case 'Staigic':
+      case 'Geared Up':
         return (
           <div className="tab-content">
-            <h3>Staigic Project</h3>
-            <p>Details about the Staigic project will go here.</p>
+            <h3>Geared Up</h3>
+            <p>
+              Our app is centered on New Zealand's 11 Great Walks. In 7days, our
+              team of 6 members created a React web app that Lists all great
+              walks, lets users tick off what they already have while showing
+              them what they still need to acquire. This syncs back to the
+              database, keeping everything up to date. This meant users could
+              quickly see what gear they already had and what they still needed
+              to get for their chosen walk.
+            </p>
             {/* Add more information, links, images, etc. */}
           </div>
         )
@@ -72,10 +80,10 @@ const Projects = () => {
           Overview
         </button>
         <button
-          className={activeTab === 'Staigic' ? 'active' : ''}
-          onClick={() => handleTabClick('Staigic')}
+          className={activeTab === 'Geared Up' ? 'active' : ''}
+          onClick={() => handleTabClick('Geared Up')}
         >
-          Staigic
+          Geared Up
         </button>
         <button
           className={activeTab === 'Snake' ? 'active' : ''}

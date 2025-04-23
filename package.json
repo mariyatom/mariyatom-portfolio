@@ -26,9 +26,11 @@
     ]
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "express": "^4.17.2",
     "knex": "^2.5.1",
     "react-scroll": "^1.9.3",
+    "sass-loader": "^16.0.5",
     "sqlite3": "^5.1.6",
     "superagent": "^8.1.2"
   },
@@ -59,7 +61,7 @@
     "react": "^18.0.2",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.2",
-    "sass": "^1.50.1",
+    "sass": "^1.86.3",
     "supertest": "^6.3.4",
     "tsx": "^3.12.7",
     "typescript": "^5.3.3",

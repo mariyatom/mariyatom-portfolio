@@ -1,4 +1,11 @@
 const Landing = () => {
+  const githubUrl = import.meta.env.URL_GITHUB
+  const linkedInUrl = import.meta.env.URL_LinkedIn
+  const cvUrl = '/mariyatom-CV.pdf'
+
+  const redirectToSocialPage = (url: string | undefined) => {
+    window.open(url, '_blank') // Opens in a new tab
+  }
   return (
     <div className="landing-page">
       <section className="hero-section bounce">
@@ -9,9 +16,25 @@ const Landing = () => {
             Communication Engineering&gt;
           </p>
           <div className="social-links">
-            <button className="social-button github">Github</button>
-            <button className="social-button linkedin">LinkedIn</button>
-            <button className="social-button cv">CV</button>
+            <button
+              className="social-button github"
+              onClick={() => redirectToSocialPage(githubUrl)}
+              aria-label="Visit my GitHub profile"
+            >
+              Github
+            </button>
+            <button
+              className="social-button linkedin"
+              onClick={() => redirectToSocialPage(linkedInUrl)}
+            >
+              LinkedIn
+            </button>
+            <button
+              className="social-button cv"
+              onClick={() => redirectToSocialPage(cvUrl)}
+            >
+              CV
+            </button>
           </div>
         </div>
       </section>
