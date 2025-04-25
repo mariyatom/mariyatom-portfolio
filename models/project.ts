@@ -15,8 +15,12 @@ export const projectData: Project[] = [
   {
     id: 1,
     title: 'Overview',
-    text: `These projects are a combination of collaborative work in a team environment utilising Agile Methodologies, and solo projects I have designed myself. At Dev Academy, we are trained in human skills with an emphasis on personal growth and effective collaboration, made possible through daily pair programming and intentional feedback sessions.`,
-    description: `I have achieved the New Zealand Certificate of Applied Software Development (Level 6, Computer Science)...`,
+    text: `These projects are a combination of collaborative work in a team environment utilising Agile Methodologies, and solo projects I have designed myself. At Dev Academy, we are trained in human skills with an emphasis on personal growth and effective collaboration, made possible through daily pair programming and intentional feedback sessions.
+
+I have achieved the New Zealand Certificate of Applied Software Development (Level 6, Computer Science). During this intensive course, I have become proficient in the fundamentals of software development, building my knowledge base and ensuring that I am work ready for a career as a full-stack software engineer.
+
+Click on a tab to find out more!`,
+    description: ``,
     codeLink: '',
     images: [],
     tech: [],
@@ -86,8 +90,15 @@ export const projectData: Project[] = [
   {
     id: 5,
     title: 'Todo List',
-    text: `Description and features of the Todo List application.`,
-    description: `A simple yet efficient todo list app to track daily tasks...`,
+    text: `Full Stack Individual Challenge - Dev Academy Aotearoa.`,
+    description: `The application effectively implements Create, Read, Update, and Delete operations (CRUD) for to-do tasks, demonstrating a solid link between the frontend and backend. Users can Add new tasks to their list,Modify existing tasks, either by double-clicking or using an edit button,Remove tasks from the list and the database,Mark tasks as finished.
+    The project was useful in solidifying  understanding of state management within a full-stack application.
+    The application features different tabs to filter tasks.All-Displays both completed and pending tasks. Active-Shows only the tasks that are not yet completed (pending).Completed- Displays only the tasks that have been marked as completed.
+    
+    When a task is marked as "Completed", it initially remains visible in the "All" list. Upon clicking the "Clear Completed" button, it is removed from the "All" list and moved to the "Completed" tab. The task's status is also updated in the database.
+
+If the "Delete" button is clicked, the task is permanently removed.
+    `,
     codeLink: 'https://github.com/mariyatom/Todo',
     images: [
       '/assets/Todo1.WebP',
@@ -121,7 +132,12 @@ export const projectData: Project[] = [
     text: `Description of lil book club.`,
     description: `A simple yet efficient todo list app to track daily tasks...`,
     codeLink: 'https://github.com/mariyatom/lil-book-club',
-    images: ['/images/todo-1.png'],
+    images: [
+      '/assets/lilbook1.WebP',
+      '/assets/lilbook2.WebP',
+      '/assets/lilbook3.WebP',
+      '/assets/lilbook4.WebP',
+    ],
     tech: ['Javascript', 'HTML', 'CSS'],
   },
 ]

@@ -55,7 +55,6 @@ const ProjectCard = ({
     <div className="project-card">
       <h2 className="project-title">{title}</h2>
       <p className="project-text">{text}</p>
-      <p className="project-description">{description}</p>
 
       {images.length > 0 && (
         <div className="carousel-container">
@@ -97,6 +96,9 @@ const ProjectCard = ({
           </div>
         </div>
       )}
+      <h3>About</h3>
+      <p className="project-description">{description}</p>
+
       <div className="code-links">
         {codeLink && (
           <div className="code-link">
