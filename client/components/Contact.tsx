@@ -26,10 +26,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'service_vrucwmk',
-        'template_c0jr7ze',
+        process.env.CONTACT_ME_SERVICE_ID || '', // Use environment variable
+        process.env.CONTACT_ME_TEMPLATE_ID || '', // Use environment variable
         form.current,
-        'h7n8FrEPsDt2OIQbB'
+        process.env.CONTACT_ME_EMAIL_PUBLIC_KEY || '' // Use environment variable
       )
       .then(
         (result) => {
