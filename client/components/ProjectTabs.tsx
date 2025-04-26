@@ -4,7 +4,16 @@ interface Props {
 }
 
 const ProjectTabs = ({ activeTab, onTabClick }: Props) => {
-  const tabs = ['Overview', 'Geared Up', 'Big Mart', 'TodoList']
+  const tabs = [
+    'Overview',
+    'Geared Up',
+    'Big Mart',
+    'CMS',
+    'Todo List',
+    'Portfolio',
+    'Lil-book-club',
+    'Tic-Tac-Toe-Game',
+  ]
   return (
     <div className="tab-navigation">
       {tabs.map((tab) => (
