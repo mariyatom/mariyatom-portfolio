@@ -6,7 +6,10 @@ interface ProjectCardProps {
   title: string
   text: string
   description: string
+  color: string
+  icon: string
   codeLink: string
+  deployed: string
   images: string[]
   tech: string[]
 }
@@ -15,7 +18,10 @@ const ProjectCard = ({
   title,
   text,
   description,
+  color,
+  icon,
   codeLink,
+  deployed,
   images,
   tech,
 }: ProjectCardProps) => {
@@ -54,7 +60,24 @@ const ProjectCard = ({
   return (
     <div className="project-card">
       <h2 className="project-title">{title}</h2>
-      <p className="project-text">{text}</p>
+      <p className="project-text">
+        <h4>
+          {text}{' '}
+          {deployed !== '' && (
+            <>
+              |{' '}
+              <a
+                href={deployed}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: 'green' }}
+              >
+                Try it out
+              </a>
+            </>
+          )}
+        </h4>
+      </p>
 
       {images.length > 0 && (
         <div className="carousel-container">
@@ -96,8 +119,13 @@ const ProjectCard = ({
           </div>
         </div>
       )}
-      <h3>About</h3>
-      <p className="project-description">{description}</p>
+
+      {description !== '' && (
+        <div>
+          <h3>About</h3>
+          <p className="project-description">{description}</p>
+        </div>
+      )}
 
       <div className="code-links">
         {codeLink && (
@@ -108,7 +136,8 @@ const ProjectCard = ({
               <a href={codeLink} target="_blank" rel="noopener noreferrer">
                 <h4>
                   <u>
-                    <FaGithub size={30} style={{ color: 'green' }} />: View Code
+                    View Code
+                    <FaGithub size={30} style={{ color: 'green' }} />
                   </u>
                 </h4>
               </a>

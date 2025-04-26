@@ -1,8 +1,11 @@
 export interface ProjectData {
   title: string
   text: string
+  color:string
+  icon:string
   description: string
   codeLink: string
+  deployed: string
   images: string[]
   tech: string[]
 }
@@ -15,22 +18,37 @@ export const projectData: Project[] = [
   {
     id: 1,
     title: 'Overview',
-    text: `These projects are a combination of collaborative work in a team environment utilising Agile Methodologies, and solo projects I have designed myself. At Dev Academy, we are trained in human skills with an emphasis on personal growth and effective collaboration, made possible through daily pair programming and intentional feedback sessions.
+    text: ``,
+    color:'',
+    icon:'',
+    description: `These projects are a combination of collaborative work in a team environment utilising Agile Methodologies, and solo projects I have designed myself. At Dev Academy, we are trained in human skills with an emphasis on personal growth and effective collaboration, made possible through daily pair programming and intentional feedback sessions.
 
-I have achieved the New Zealand Certificate of Applied Software Development (Level 6, Computer Science). During this intensive course, I have become proficient in the fundamentals of software development, building my knowledge base and ensuring that I am work ready for a career as a full-stack software engineer.
+I have achieved the New Zealand Certificate of Applied Software Development (Level 6). During this intensive course, I have become proficient in the fundamentals of software development, building my knowledge base and ensuring that I am work ready for a career as a full-stack software engineer.
 
 Click on a tab to find out more!`,
-    description: ``,
     codeLink: '',
+    deployed: '',
     images: [],
     tech: [],
   },
   {
     id: 2,
     title: 'Geared Up',
-    text: `Our app is centered on New Zealand's 11 Great Walks.`,
-    description: `In 7 days, our team of 6 members created a React web app that lists all great walks...`,
+    text: `Final 7-Day Group Project at Dev Academy.`,
+    color:'',
+    icon:'',
+    description: `Our app is centered on New Zealand's 11 Great Walks. our team of 6 members created a React web app that lists all great walks.During this project, I got to explore both frontend and backend development. I spent the first few days deep in the backend before switching to the frontend and honestly, that’s when I found my stride.
+
+It felt like working on a car engine hidden away but vital, powering everything from behind the scenes. That’s where all the logic lives, and I really enjoyed getting stuck into that part.
+
+This app let users see at a glance what gear they already had and what they still needed to prepare for their chosen walk.
+
+🔐 Keeping Things Secure
+We used Auth0 as our login system a kind of virtual bouncer that ensures only logged-in users can view or update their personal info. We implemented this security on both frontend and backend through pair programming.
+
+`,
     codeLink: 'https://github.com/mariyatom/GearedUp',
+    deployed: '',
     images: [
       '/assets/GearedUp1.WebP',
       '/assets/GearedUp2.WebP',
@@ -51,9 +69,18 @@ Click on a tab to find out more!`,
   {
     id: 3,
     title: 'Big Mart',
-    text: `Information and details about the Big Mart project.`,
-    description: `Big Mart was a solo mini-project to practice managing state...`,
+    text: `Full-stack Solo Project`,
+    color:'',
+    icon:'',
+    description: `Big Mart was a solo mini-project. I’m developing this app for my father-in-law’s retail shop in Auckland. It’s a well-established store with over 15 years of history, especially focused on South Indian foods.
+
+During our foundation phase and the 20-hour project time, I first started thinking about this app. But due to time and knowledge limitations at that point, I pivoted and created a small book site for toddlers instead called Lil Book Shop, built using JavaScript.
+
+However, the moment I heard about the chance to do a personal project, my mind instantly leaned toward creating an e-commerce website for our family’s shop without a second thought.
+
+What motivated me even more was the freedom of not having to build a finished product. With that flexibility, I decided to move ahead with this app idea, building my own MVP (Minimum Viable Product) and designing the database from scratch.`,
     codeLink: 'https://github.com/mariyatom/big-mart',
+    deployed: '',
     images: [
       '/assets/BigMart2.WebP',
       '/assets/BigMart3.WebP',
@@ -73,10 +100,13 @@ Click on a tab to find out more!`,
   {
     id: 4,
     title: 'CMS',
-    text: `Information and details about the CMS project.`,
-    description: `CMS was a solo mini-project to practice managing state...`,
+    text: `Full-stack Solo Project`,
+    color:'',
+    icon:'',
+    description: `CMS was a solo mini-project to practice managing state. In addition to our grocery selection, we also offer a Content Management System (CMS) to help businesses manage and streamline their digital content effortlessly.CMS is an extension of the BigMart project, implemented within the same project but with a separate login system.`,
     codeLink:
       'https://github.com/mariyatom/big-mart/tree/main/client/components',
+    deployed: '',
     images: [
       '/assets/CMS1.WebP',
       '/assets/CMS2.WebP',
@@ -91,6 +121,8 @@ Click on a tab to find out more!`,
     id: 5,
     title: 'Todo List',
     text: `Full Stack Individual Challenge - Dev Academy Aotearoa.`,
+    color:'',
+    icon:'',
     description: `The application effectively implements Create, Read, Update, and Delete operations (CRUD) for to-do tasks, demonstrating a solid link between the frontend and backend. Users can Add new tasks to their list,Modify existing tasks, either by double-clicking or using an edit button,Remove tasks from the list and the database,Mark tasks as finished.
     The project was useful in solidifying  understanding of state management within a full-stack application.
     The application features different tabs to filter tasks.All-Displays both completed and pending tasks. Active-Shows only the tasks that are not yet completed (pending).Completed- Displays only the tasks that have been marked as completed.
@@ -100,6 +132,7 @@ Click on a tab to find out more!`,
 If the "Delete" button is clicked, the task is permanently removed.
     `,
     codeLink: 'https://github.com/mariyatom/Todo',
+    deployed: '',
     images: [
       '/assets/Todo1.WebP',
       '/assets/Todo2.WebP',
@@ -120,23 +153,51 @@ If the "Delete" button is clicked, the task is permanently removed.
   {
     id: 6,
     title: 'Portfolio',
-    text: `Description of Portfolio.`,
-    description: `A simple yet efficient todo list app to track daily tasks...`,
+    text: `Full-stack Solo Project | Status: Always under construction. Just like me.`,
+    color:'',
+    icon:'',
+    description: `The portfolio project showcases different project links, provides access to all my GitHub repositories, and includes a brief introduction about me.You're looking at it! A space to show off all the sweat, snacks, and semicolons behind my projects. Designed by me, styled with love (and CSS).`,
     codeLink: 'https://github.com/mariyatom/mariyatom-portfolio',
-    images: ['/images/todo-1.png'],
+    deployed: '',
+    images: [
+      '/assets/portfolio1.WebP',
+      '/assets/portfolio2.WebP',
+      '/assets/portfolio3.WebP',
+    ],
     tech: ['React', 'Sqlite', 'Express', 'Knex.Js', 'CSS', 'Typescript'],
   },
   {
     id: 7,
     title: 'Lil-book-club',
-    text: `Description of lil book club.`,
-    description: `A simple yet efficient todo list app to track daily tasks...`,
+    text: `Full-stack Solo Project`,
+    color:'',
+    icon:'',
+    description: `I’ve created a small project related to kids' books, inspired by my little one.
+It includes a home page, a kids' books page with filters, an add-to-cart function, a remove-from-cart feature (using the minus sign on each item or int the cart), a cart page, and a payment section with messages (though it’s not integrated with the payment gateway yet; I’m working on that).`,
     codeLink: 'https://github.com/mariyatom/lil-book-club',
+    deployed: 'https://mariyatom.github.io/lil-book-club/',
     images: [
       '/assets/lilbook1.WebP',
       '/assets/lilbook2.WebP',
       '/assets/lilbook3.WebP',
       '/assets/lilbook4.WebP',
+    ],
+    tech: ['Javascript', 'HTML', 'CSS'],
+  },
+  {
+    id: 8,
+    title: 'Tic-Tac-Toe-Game',
+    text: `Individual Challenge - Dev Academy Aotearoa.  `,
+    color:'',
+    icon:'',
+    description: `When a player clicks a cell, it should display their mark (❌ or ⭕). After each move, the game should switch the turn to the other player. You can dynamically update the subtitle text to show whose turn it is, making it more interactive ("Now it's O's turn!" or "Now it's X's turn!").After each move, the game should check for a winner by checking all rows, columns, and diagonals.If there is a winner, the game should display a message announcing the winner.`,
+    codeLink: 'https://github.com/mariyatom/Tic-Tac-Toe-Game',
+    deployed: 'https://mariyatom.github.io/Tic-Tac-Toe-Game/',
+    images: [
+      '/assets/Tictactoe1.WebP',
+      '/assets/Tictactoe2.WebP',
+      '/assets/Tictactoe3.WebP',
+      '/assets/Tictactoe4.WebP',
     ],
     tech: ['Javascript', 'HTML', 'CSS'],
   },

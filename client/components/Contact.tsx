@@ -1,14 +1,28 @@
 import emailjs from '@emailjs/browser'
 import '../styles/Contact.scss' // Create this SCSS file
 import { useRef } from 'react'
+import { useSaveContact } from '../hooks/useContact'
+import { ContactData } from '../../models/contact'
 
 const Contact = () => {
   const form = useRef<HTMLFormElement | null>(null)
+  const saveContact = useSaveContact()
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
     if (!form.current) return
+
+    const formData = new FormData(form.current)
+    const payload: ContactData = {
+      name: (formData.get('user_name') as string) || '',
+      email: (formData.get('user_email') as string) || '',
+      phone: (formData.get('user_phone') as string) || '',
+      subject: (formData.get('subject') as string) || '',
+      message: (formData.get('message') as string) || '',
+      createdAt: new Date().toISOString(), // Add current timestamp
+    }
+    saveContact.mutate(payload)
 
     emailjs
       .sendForm(
@@ -20,6 +34,7 @@ const Contact = () => {
       .then(
         (result) => {
           alert('Message sent successfully!')
+
           form.current?.reset()
         },
         (error) => {

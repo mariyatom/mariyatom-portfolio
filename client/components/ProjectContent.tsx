@@ -16,7 +16,10 @@ const ProjectContent = ({ activeTab }: Props) => {
         title={selected.title}
         text={selected.text}
         description={selected.description}
+        color={selected.color}
+        icon={selected.icon}
         codeLink={selected.codeLink}
+        deployed={selected.deployed}
         images={selected.images}
         tech={selected.tech}
       />
