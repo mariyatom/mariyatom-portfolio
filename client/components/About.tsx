@@ -1,5 +1,5 @@
 import { useState } from 'react'
-// import '../styles/about.scss'
+import '../styles/about.scss'
 
 const About = () => {
   const imageMap = {
