@@ -1,5 +1,5 @@
 import emailjs from '@emailjs/browser'
-import '../styles/Contact.scss' // Create this SCSS file
+import '../styles/contact.scss' // Create this SCSS file
 import { useRef } from 'react'
 import { useSaveContact } from '../hooks/useContact'
 import { ContactData } from '../../models/contact'

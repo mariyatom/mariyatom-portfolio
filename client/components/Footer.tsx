@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-import '../styles/Footer.scss' // Create this SCSS file
+import '../styles/footer.scss' // Create this SCSS file
 
 const Footer = () => {
   const githubUrl = import.meta.env.VITE_URL_GITHUB
