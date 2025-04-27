@@ -32,18 +32,16 @@ const Contact = () => {
         SERVICE_ID || '', // Use environment variable
         TEMPLATE_ID || '', // Use environment variable
         form.current,
-        PUBLIC_KEY || '' // Use environment variable
+        PUBLIC_KEY || '', // Use environment variable
       )
-      .then(
-        (result) => {
-          alert('Message sent successfully!')
-
-          form.current?.reset()
-        },
-        (error) => {
-          alert('Failed to send message. Please try again later.')
-        }
-      )
+      .then(() => {
+        alert('Message sent successfully!')
+        form.current?.reset()
+      })
+      .catch((error) => {
+        alert('Failed to send message. Please try again later.')
+        console.error(error) // You might want to log the error for debugging
+      })
   }
 
   return (

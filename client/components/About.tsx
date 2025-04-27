@@ -45,7 +45,7 @@ const About = () => {
           turning bugs into features (well… mostly).
         </p>
         <p>
-          I'm passionate about building smart, simple digital solutions that
+          I’m passionate about building smart, simple digital solutions that
           make life just a bit easier. Let’s build cool stuff together -
           preferably with good coffee and better commit messages ☕✨.
         </p>
