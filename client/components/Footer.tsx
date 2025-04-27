@@ -1,26 +1,25 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFilePdf } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import '../styles/Footer.scss' // Create this SCSS file
 
 const Footer = () => {
+  const githubUrl = import.meta.env.VITE_URL_GITHUB
+  const linkedInUrl = import.meta.env.VITE_URL_LinkedIn
+  const cvUrl = import.meta.env.VITE_URL_CV
   return (
     <footer className="footer">
-      <p className="copyright">&copy; 2024 Portfolio by Mariya Tom</p>
+      <p className="copyright">&copy; 2024 Portfolio | Mariya Tom</p>
+
       <div className="social-links">
-        <a
-          href="https://linkedin.com/in/your-linkedin"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn
+        <a href={linkedInUrl} target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a
-          href="https://github.com/your-github"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Github
+        <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faGithub} />
         </a>
-        <a href="/cv/your-cv.pdf" target="_blank" rel="noopener noreferrer">
-          CV
+        <a href={cvUrl} target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faFilePdf} />
         </a>
       </div>
     </footer>
