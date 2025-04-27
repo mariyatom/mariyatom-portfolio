@@ -34,8 +34,8 @@
     gap: 12px;
 
     .interest-button {
-      background-color: #fff;
-      color: #3c4c92;
+      background-color: #c8cdf5e3;
+      color: #793c92f7;
       border: none;
       padding: 8px 16px;
       border-radius: 20px;
@@ -43,6 +43,8 @@
       font-size: 1rem;
       cursor: default;
       transition: transform 0.2s ease;
+      box-shadow: 4px 4px #0006;
+
 
       &:hover {
         transform: scale(1.05);

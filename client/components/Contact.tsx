@@ -7,6 +7,9 @@ import { ContactData } from '../../models/contact'
 const Contact = () => {
   const form = useRef<HTMLFormElement | null>(null)
   const saveContact = useSaveContact()
+  const SERVICE_ID = import.meta.env.VITE_CONTACT_ME_SERVICE_ID
+  const TEMPLATE_ID = import.meta.env.VITE_CONTACT_ME_TEMPLATE_ID
+  const PUBLIC_KEY = import.meta.env.VITE_CONTACT_ME_EMAIL_PUBLIC_KEY
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -26,10 +29,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        process.env.CONTACT_ME_SERVICE_ID || '', // Use environment variable
-        process.env.CONTACT_ME_TEMPLATE_ID || '', // Use environment variable
+        SERVICE_ID || '', // Use environment variable
+        TEMPLATE_ID || '', // Use environment variable
         form.current,
-        process.env.CONTACT_ME_EMAIL_PUBLIC_KEY || '' // Use environment variable
+        PUBLIC_KEY || '' // Use environment variable
       )
       .then(
         (result) => {
