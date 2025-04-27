@@ -14,7 +14,7 @@ node_modules
 coverage/*
 
 # Dotenv env settings
-.env
+# .env
 
 # Build directory
 /dist
