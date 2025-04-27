@@ -1,10 +1,14 @@
 const Landing = () => {
-  const githubUrl = import.meta.env.URL_GITHUB
-  const linkedInUrl = import.meta.env.URL_LinkedIn
-  const cvUrl = '/mariyatom-CV.pdf'
+  const githubUrl = import.meta.env.VITE_URL_GITHUB
+  const linkedInUrl = import.meta.env.VITE_URL_LinkedIn
+  const cvUrl = import.meta.env.VITE_URL_CV
 
   const redirectToSocialPage = (url: string | undefined) => {
-    window.open(url, '_blank') // Opens in a new tab
+    if (url) {
+      window.open(url, '_blank') // Opens in a new tab
+    } else {
+      alert('URL is undefined or not available')
+    }
   }
   return (
     <div className="landing-page">
@@ -38,22 +42,6 @@ const Landing = () => {
           </div>
         </div>
       </section>
-
-      {/* You can add more sections here like About, Projects, Contact */}
-      {/* <section id="about" className="section">
-        <h2>About</h2>
-        <p>Your about content here.</p>
-      </section>
-
-      <section id="projects" className="section">
-        <h2>Projects</h2>
-        <p>Your projects content here.</p>
-      </section>
-
-      <section id="contact" className="section">
-        <h2>Contact</h2>
-        <p>Your contact information here.</p>
-      </section> */}
     </div>
   )
 }

@@ -60,7 +60,7 @@ const ProjectCard = ({
   return (
     <div className="project-card">
       <h2 className="project-title">{title}</h2>
-      <p className="project-text">
+      <div className="project-text" style={{ color: color }}>
         <h4>
           {text}{' '}
           {deployed !== '' && (
@@ -76,8 +76,9 @@ const ProjectCard = ({
               </a>
             </>
           )}
+          {icon !== '' && <span style={{ marginLeft: '8px' }}>{icon}</span>}
         </h4>
-      </p>
+      </div>
 
       {images.length > 0 && (
         <div className="carousel-container">
@@ -122,7 +123,7 @@ const ProjectCard = ({
 
       {description !== '' && (
         <div>
-          <h3>About</h3>
+          {/* <h3>About</h3> */}
           <p className="project-description">{description}</p>
         </div>
       )}
