@@ -32,7 +32,7 @@ const Contact = () => {
         SERVICE_ID || '', // Use environment variable
         TEMPLATE_ID || '', // Use environment variable
         form.current,
-        PUBLIC_KEY || '', // Use environment variable
+        PUBLIC_KEY || '' // Use environment variable
       )
       .then(() => {
         alert('Message sent successfully!')
@@ -47,31 +47,35 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <h2>Contact Me</h2>
-      <form ref={form} onSubmit={sendEmail} className="contact-form">
-        <div className="form-group">
-          <label htmlFor="name">Name*</label>
-          <input type="text" name="user_name" required />
+      <div className="contact-content">
+        <div className="contact-form-main">
+          <form ref={form} onSubmit={sendEmail} className="contact-form">
+            <div className="form-group">
+              <label htmlFor="name">Name*</label>
+              <input type="text" name="user_name" required />
+            </div>
+            <div className="form-group">
+              <label htmlFor="email">Email*</label>
+              <input type="email" name="user_email" required />
+            </div>
+            <div className="form-group">
+              <label htmlFor="phone">Phone*</label>
+              <input type="text" name="user_phone" required />
+            </div>
+            <div className="form-group">
+              <label htmlFor="subject">Subject*</label>
+              <input type="text" name="subject" required />
+            </div>
+            <div className="form-group">
+              <label htmlFor="message">Message*</label>
+              <textarea name="message" rows={5} required />
+            </div>
+            <button type="submit" className="send-button">
+              Send Message
+            </button>
+          </form>
         </div>
-        <div className="form-group">
-          <label htmlFor="email">Email*</label>
-          <input type="email" name="user_email" required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="phone">Phone*</label>
-          <input type="text" name="user_phone" required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="subject">Subject*</label>
-          <input type="text" name="subject" required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="message">Message*</label>
-          <textarea name="message" rows={5} required />
-        </div>
-        <button type="submit" className="send-button">
-          Send Message
-        </button>
-      </form>
+      </div>
     </div>
   )
 }

@@ -41,6 +41,21 @@ body {
   font-weight: 700;
   font-size: 1.5rem;
 }
+.nav-links {
+  display: flex;
+
+  @media (max-width: 768px) {
+    display: none; /* Hide the links on mobile */
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    background-color: rgb(10 34 106 / 38%);
+    padding: 1rem;
+    width: 100%;
+  }
+}
 
 .nav-links a {
   margin-left: 20px;
@@ -123,9 +138,7 @@ body {
 .section p {
   line-height: 1.6;
 }
-#contact {
-  background-color: #3a5094;
-}
+
 .logo {
   font-size: 20px;
 }
