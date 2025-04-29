@@ -25,7 +25,7 @@ export const projectData: Project[] = [
 
 I have achieved the New Zealand Certificate of Applied Software Development (Level 6). During this intensive course, I have become proficient in the fundamentals of software development, building my knowledge base and ensuring that I am work ready for a career as a full-stack software engineer.
 
-Click on a tab to find out more!`,
+Click on a tab to find out more! 📂💡👉🏽`,
     codeLink: '',
     deployed: '',
     images: [],
