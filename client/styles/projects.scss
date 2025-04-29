@@ -34,7 +34,7 @@
       border: none;
       border-radius: 1rem;
       color: #b0b3c5;
-      font-weight: 500;
+      font-weight: 600;
       cursor: pointer;
       transition: all 0.3s ease;
   
@@ -43,7 +43,7 @@
       }
   
       &.active {
-        background-color: #1849a9;
+        background-color: #00a884;
         color: white;
         font-weight: bold;
         animation: bounce 0.4s ease infinite;
