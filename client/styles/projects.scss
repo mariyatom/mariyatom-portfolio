@@ -13,32 +13,44 @@
     margin-bottom: 1.5rem;
     text-align: left;
   }
-
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+  
   .tab-navigation {
     display: flex;
-    margin-bottom: 1.5rem;
-    border-bottom:2px solid #515358;
-
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #333c66;
+  
     button {
-      background: none;
-      color: white;
+      padding: 0.5rem 1.2rem;
+      background-color: transparent;
       border: none;
-      padding: 0.75rem 1.5rem;
-      cursor: pointer;
-      font-size: 1rem;
+      border-radius: 1rem;
+      color: #b0b3c5;
       font-weight: 500;
-      transition: color 0.3s ease;
-
+      cursor: pointer;
+      transition: all 0.3s ease;
+  
       &:hover {
-        color: #00a884;
+        background-color: #3f4a7d;
       }
-
+  
       &.active {
-        color: #00a884;
-        border-bottom: 2px solid #00a884;
+        background-color: #1849a9;
+        color: white;
+        font-weight: bold;
+        animation: bounce 0.4s ease infinite;
       }
     }
   }
+  
 
   .project-content {
     background-color: #353943;
