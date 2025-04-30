@@ -25,6 +25,7 @@
   
   .tab-navigation {
     display: flex;
+    flex-wrap: wrap; // Allow wrapping
     gap: 1rem;
     padding: 1rem 0;
     border-bottom: 1px solid #333c66;
@@ -38,16 +39,27 @@
       font-weight: 600;
       cursor: pointer;
       transition: all 0.3s ease;
+
   
       &:hover {
-        background-color: #3f4a7d;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #ffffff;
+        transform: scale(1.05);
+
       }
   
       &.active {
         background-color: #00a884;
         color: white;
         font-weight: bold;
+
         animation: bounce 0.4s ease infinite;
+      }
+    }
+    @media (max-width: 768px) {
+      button {
+        flex: 1 1 calc(33.333% - 1rem); // Force 3 per row on small screens
+        text-align: justify;
       }
     }
   }
