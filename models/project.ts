@@ -80,7 +80,7 @@ However, the moment I heard about the chance to do a personal project, my mind i
 
 What motivated me even more was the freedom of not having to build a finished product. With that flexibility, I decided to move ahead with this app idea, building my own MVP (Minimum Viable Product) and designing the database from scratch.`,
     codeLink: 'https://github.com/mariyatom/big-mart',
-    deployed: '',
+    deployed: 'https://big-mart-mariyas.devacademy.nz',
     images: [
       '/assets/BigMart2.WebP',
       '/assets/BigMart3.WebP',
@@ -101,12 +101,12 @@ What motivated me even more was the freedom of not having to build a finished pr
     id: 4,
     title: 'CMS',
     text: `Full-stack Solo Project`,
-    color: 'yellow',
+    color: '#00a884',
     icon: '',
     description: `CMS was a solo mini-project to practice managing state. In addition to our grocery selection, we also offer a Content Management System (CMS) to help businesses manage and streamline their digital content effortlessly.CMS is an extension of the BigMart project, implemented within the same project but with a separate login system.`,
     codeLink:
       'https://github.com/mariyatom/big-mart/tree/main/client/components',
-    deployed: '',
+    deployed: 'https://big-mart-mariyas.devacademy.nz/cms',
     images: [
       '/assets/CMS1.WebP',
       '/assets/CMS2.WebP',
@@ -158,7 +158,7 @@ If the "Delete" button is clicked, the task is permanently removed.
     icon: '',
     description: `The portfolio project showcases different project links, provides access to all my GitHub repositories, and includes a brief introduction about me.You're looking at it! A space to show off all the sweat, snacks, and semicolons behind my projects. Designed by me, styled with love (and CSS).`,
     codeLink: 'https://github.com/mariyatom/mariyatom-portfolio',
-    deployed: '',
+    deployed: 'https://mariyatom-portfolio.vercel.app/',
     images: [
       '/assets/portfolio1.WebP',
       '/assets/portfolio2.WebP',
