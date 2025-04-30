@@ -40,8 +40,8 @@ const About = () => {
             dinosaur still roars 🦖).
           </p>
           <p>
-            Now in Aotearoa, I’m back in tech with a toddler on one hip and a
-            fire for creative problem-solving in the other hand. I love
+            Now in Aotearoa, I’m back in tech with
+            fire for creative problem-solving . I love
             collaborating with tech people, brainstorming weird ideas into real
             things, and turning bugs into features (well… mostly).
           </p>
