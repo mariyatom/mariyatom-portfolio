@@ -9,10 +9,10 @@ const ProjectTabs = ({ activeTab, onTabClick }: Props) => {
     'Geared Up',
     'Big Mart',
     'CMS',
-    'Todo List',
+    'Todo',
     'Portfolio',
-    'Lil-book-club',
-    'Tic-Tac-Toe-Game',
+    'Lil-book',
+    'Game',
   ]
   return (
     <div className="tab-navigation">

@@ -119,9 +119,9 @@ What motivated me even more was the freedom of not having to build a finished pr
   },
   {
     id: 5,
-    title: 'Todo List',
+    title: 'Todo',
     text: `Full Stack Individual Challenge - Dev Academy Aotearoa.`,
-    color: 'pink',
+    color: 'Blue',
     icon: '📝',
     description: `The application effectively implements Create, Read, Update, and Delete operations (CRUD) for to-do tasks, demonstrating a solid link between the frontend and backend. Users can Add new tasks to their list,Modify existing tasks, either by double-clicking or using an edit button,Remove tasks from the list and the database,Mark tasks as finished.
     The project was useful in solidifying  understanding of state management within a full-stack application.
@@ -154,7 +154,7 @@ If the "Delete" button is clicked, the task is permanently removed.
     id: 6,
     title: 'Portfolio',
     text: `Full-stack Solo Project | Status: Always under construction. Just like me.`,
-    color: 'lightblue',
+    color: 'Blue',
     icon: '',
     description: `The portfolio project showcases different project links, provides access to all my GitHub repositories, and includes a brief introduction about me.You're looking at it! A space to show off all the sweat, snacks, and semicolons behind my projects. Designed by me, styled with love (and CSS).`,
     codeLink: 'https://github.com/mariyatom/mariyatom-portfolio',
@@ -168,7 +168,7 @@ If the "Delete" button is clicked, the task is permanently removed.
   },
   {
     id: 7,
-    title: 'Lil-book-club',
+    title: 'Lil-book',
     text: `Full-stack Solo Project`,
     color: 'yellow',
     icon: '',
@@ -186,9 +186,9 @@ It includes a home page, a kids' books page with filters, an add-to-cart functio
   },
   {
     id: 8,
-    title: 'Tic-Tac-Toe-Game',
+    title: 'Game',
     text: `Individual Challenge - Dev Academy Aotearoa.  `,
-    color: 'lightblue',
+    color: 'Blue',
     icon: '',
     description: `When a player clicks a cell, it should display their mark (❌ or ⭕). After each move, the game should switch the turn to the other player. You can dynamically update the subtitle text to show whose turn it is, making it more interactive ("Now it's O's turn!" or "Now it's X's turn!").After each move, the game should check for a winner by checking all rows, columns, and diagonals.If there is a winner, the game should display a message announcing the winner.`,
     codeLink: 'https://github.com/mariyatom/Tic-Tac-Toe-Game',

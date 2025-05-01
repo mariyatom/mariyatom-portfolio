@@ -28,8 +28,7 @@ const About = () => {
           <p>
             Hi, I’m Mariya - a full-stack developer who speaks both frontend
             sass and backend logic. I recently graduated from Dev Academy
-            Aotearoa (Level 6), where I dove headfirst into React, databases,
-            and lots of late-night debugging snacks 🍫.
+            Aotearoa (Level 6).
           </p>
           <p>
             My tech journey started with an Electronics and Communications
@@ -40,16 +39,12 @@ const About = () => {
             dinosaur still roars 🦖).
           </p>
           <p>
-            Now in Aotearoa, I’m back in tech with
-            fire for creative problem-solving . I love
-            collaborating with tech people, brainstorming weird ideas into real
-            things, and turning bugs into features (well… mostly).
+            Now in Aotearoa, I’m back in tech with fire for creative
+            problem-solving. I’m passionate about building smart, simple digital
+            solutions that make life just a bit easier. Let’s build cool stuff
+            together
           </p>
-          <p>
-            I’m passionate about building smart, simple digital solutions that
-            make life just a bit easier. Let’s build cool stuff together -
-            preferably with good coffee and better commit messages ☕✨.
-          </p>
+
           <div className="interests">
             {Object.keys(imageMap).map((interest) => (
               <button

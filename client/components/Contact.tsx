@@ -1,11 +1,14 @@
 import emailjs from '@emailjs/browser'
 import '../styles/contact.scss' // Create this SCSS file
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import { useSaveContact } from '../hooks/useContact'
 import { ContactData } from '../../models/contact'
+import { isValidEmail, isValidPhone } from '../utils/validators'
 
 const Contact = () => {
   const form = useRef<HTMLFormElement | null>(null)
+  const [error, setError] = useState<string | null>(null)
+
   const saveContact = useSaveContact()
   const SERVICE_ID = import.meta.env.VITE_CONTACT_ME_SERVICE_ID
   const TEMPLATE_ID = import.meta.env.VITE_CONTACT_ME_TEMPLATE_ID
@@ -17,10 +20,22 @@ const Contact = () => {
     if (!form.current) return
 
     const formData = new FormData(form.current)
+    const email = (formData.get('user_email') as string) || ''
+    const phone = (formData.get('user_phone') as string) || ''
+
+    if (!isValidEmail(email)) {
+      alert('Please enter a valid email address.')
+      return
+    }
+    if (!isValidPhone(phone)) {
+      setError('Please enter a 10-digit phone number.')
+      return
+    }
+
     const payload: ContactData = {
       name: (formData.get('user_name') as string) || '',
-      email: (formData.get('user_email') as string) || '',
-      phone: (formData.get('user_phone') as string) || '',
+      email,
+      phone,
       subject: (formData.get('subject') as string) || '',
       message: (formData.get('message') as string) || '',
       createdAt: new Date().toISOString(), // Add current timestamp
@@ -61,6 +76,7 @@ const Contact = () => {
             <div className="form-group">
               <label htmlFor="phone">Phone*</label>
               <input type="text" name="user_phone" required />
+              {error && <p className="error-message">{error}</p>}
             </div>
             <div className="form-group">
               <label htmlFor="subject">Subject*</label>

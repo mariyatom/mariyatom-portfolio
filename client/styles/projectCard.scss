@@ -1,3 +1,5 @@
+@use 'variables';
+
 .project-card {
   /* Existing styles for project card */
 }
@@ -24,7 +26,7 @@
   cursor: pointer;
   z-index: 2;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  color: white;
+  color: variables.$font-main-color;
   transition: background-color 0.2s ease-in-out;
 
   &:hover {
@@ -142,7 +144,7 @@
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: #aab8d8; /* Adjust color as needed */
+  color: #193472; /* Adjust color as needed */
 }
 
 .tech-tags {
@@ -165,17 +167,17 @@
 .code-link h3 {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #aab8d8; /* Adjust color as needed */
+  color: #0c2561; /* Adjust color as needed */
   margin-bottom: 0.2rem;
 }
 
 .code-link a {
-  color: #22c1f1fa; /* Link color */
+  color: #063948fa; /* Link color */
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s ease;
 }
 
 .code-link a:hover {
-  color: #22c1f1fa; /* Hover link color */
+  color: #054b5ffa; /* Hover link color */
 }

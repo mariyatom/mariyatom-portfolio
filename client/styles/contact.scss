@@ -1,13 +1,11 @@
+@use 'variables';
 
 .contact-container {
-  min-height: 100vh;
-  background-color: #0d1116;
-  // background-color: #2c3568;
-  // background-color: #3a5094;
+  background-color: variables.$main-color;
   padding: 4rem;
   width: 80%;
-  margin: 2rem auto;
-  color: white;
+  margin: auto 1rem;
+  color: variables.$font-main-color;
 }
 .contact-container h2{
   font-size: 2.5rem;
@@ -17,7 +15,6 @@
 .contact-content {
   display: flex;
   margin-bottom: 1.5rem;
-  border-bottom: 2px solid #0d1116;;
   border-radius: 8px;
   width: 100%;
   justify-content: center;
@@ -26,7 +23,7 @@
   display: flex;
       flex-direction: column;
       width: 35%;
-      background-color: #353943;
+      background-color: rgb(153 156 165 / 40%);
       padding: 2rem;
       border-radius: 2rem;
 }
@@ -58,8 +55,8 @@
     padding: 0.5rem; /* Reduced padding */
     border: none;
     border-radius: 5px;
-    background-color: #606473;
-    color: white;
+    background-color: rgb(153 156 165 / 40%);
+    color: variables.$font-main-color;
     font-size: 1rem;
 
     &::placeholder {
@@ -73,8 +70,8 @@
 }
 
 .send-button {
-  background-color: #353943;
-  color: white;
+  background-color: rgb(153 156 165 / 40%);
+  color: variables.$font-main-color;
   border: none;
   padding: 0.5rem 1rem; /* Reduced padding */
   border-radius: 5px;
@@ -88,6 +85,10 @@
   }
 }
 @media (max-width: 768px) {
+  .contact-container {
+    padding: 2rem;
+    margin: 0;
+  }
   .contact-form-main {
 width: 100%;  }
 }
