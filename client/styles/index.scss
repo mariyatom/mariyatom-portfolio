@@ -5,23 +5,15 @@
 html, 
 body {
   font-family: 'Montserrat', sans-serif;
-  // max-width: 100%;
 }
 body {
   margin: 0;
-  display:flex;
   scroll-behavior: smooth;
   overflow-x: hidden;
 
   background-color: variables.$main-color;
 
 }
-// *, :before, :after {
-//   box-sizing: border-box;
-//   border-width: 0;
-//   border-style: solid;
-//   border-color: #e5e7eb;
-// }
 
 // * {
 //   outline: 1px solid red;
