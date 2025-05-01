@@ -92,8 +92,24 @@
     }
   }
 }
+/* For tablets and smaller */
 @media (max-width: 768px) {
   .about-content {
-  flex-direction: column;
+    flex-direction: row;
+  }
+
+  .image-section {
+    padding: 2rem;
+  }
+}
+
+/* For phones and smaller */
+@media (max-width: 480px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .image-section {
+    padding: 1rem;
   }
 }

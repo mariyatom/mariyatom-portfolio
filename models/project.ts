@@ -70,7 +70,7 @@ We used Auth0 as our login system a kind of virtual bouncer that ensures only lo
     id: 3,
     title: 'Big Mart',
     text: `Full-stack Solo Project`,
-    color: 'yellow',
+    color: 'green',
     icon: '👤🏪🛒',
     description: `Big Mart was a solo mini-project. I’m developing this app for my father-in-law’s retail shop in Auckland. It’s a well-established store with over 15 years of history, especially focused on South Indian foods.
 
@@ -101,7 +101,7 @@ What motivated me even more was the freedom of not having to build a finished pr
     id: 4,
     title: 'CMS',
     text: `Full-stack Solo Project`,
-    color: '#00a884',
+    color: 'green',
     icon: '',
     description: `CMS was a solo mini-project to practice managing state. In addition to our grocery selection, we also offer a Content Management System (CMS) to help businesses manage and streamline their digital content effortlessly.CMS is an extension of the BigMart project, implemented within the same project but with a separate login system.`,
     codeLink:
@@ -121,7 +121,7 @@ What motivated me even more was the freedom of not having to build a finished pr
     id: 5,
     title: 'Todo',
     text: `Full Stack Individual Challenge - Dev Academy Aotearoa.`,
-    color: 'Blue',
+    color: 'green',
     icon: '📝',
     description: `The application effectively implements Create, Read, Update, and Delete operations (CRUD) for to-do tasks, demonstrating a solid link between the frontend and backend. Users can Add new tasks to their list,Modify existing tasks, either by double-clicking or using an edit button,Remove tasks from the list and the database,Mark tasks as finished.
     The project was useful in solidifying  understanding of state management within a full-stack application.
@@ -154,7 +154,7 @@ If the "Delete" button is clicked, the task is permanently removed.
     id: 6,
     title: 'Portfolio',
     text: `Full-stack Solo Project | Status: Always under construction. Just like me.`,
-    color: 'Blue',
+    color: 'green',
     icon: '',
     description: `The portfolio project showcases different project links, provides access to all my GitHub repositories, and includes a brief introduction about me.You're looking at it! A space to show off all the sweat, snacks, and semicolons behind my projects. Designed by me, styled with love (and CSS).`,
     codeLink: 'https://github.com/mariyatom/mariyatom-portfolio',
@@ -170,7 +170,7 @@ If the "Delete" button is clicked, the task is permanently removed.
     id: 7,
     title: 'Lil-book',
     text: `Full-stack Solo Project`,
-    color: 'yellow',
+    color: 'green',
     icon: '',
     description: `I’ve created a small project related to kids' books, inspired by my little one.
 It includes a home page, a kids' books page with filters, an add-to-cart function, a remove-from-cart feature (using the minus sign on each item or int the cart), a cart page, and a payment section with messages (though it’s not integrated with the payment gateway yet; I’m working on that).`,
@@ -188,7 +188,7 @@ It includes a home page, a kids' books page with filters, an add-to-cart functio
     id: 8,
     title: 'Game',
     text: `Individual Challenge - Dev Academy Aotearoa.  `,
-    color: 'Blue',
+    color: 'green',
     icon: '',
     description: `When a player clicks a cell, it should display their mark (❌ or ⭕). After each move, the game should switch the turn to the other player. You can dynamically update the subtitle text to show whose turn it is, making it more interactive ("Now it's O's turn!" or "Now it's X's turn!").After each move, the game should check for a winner by checking all rows, columns, and diagonals.If there is a winner, the game should display a message announcing the winner.`,
     codeLink: 'https://github.com/mariyatom/Tic-Tac-Toe-Game',
