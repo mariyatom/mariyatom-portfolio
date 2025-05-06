@@ -7,7 +7,6 @@ const About = () => {
     Travel: '/assets/Travel.WebP',
     Coding: '/assets/code.WebP',
     Cooking: '/assets/cook.WebP',
-    food: '/assets/food.WebP',
   }
 
   const [imageSrc, setImageSrc] = useState('/assets/mariya.WebP')
@@ -28,7 +27,7 @@ const About = () => {
           <p>
             Hi, I’m Mariya - a full-stack developer who speaks both frontend
             sass and backend logic. I recently graduated from Dev Academy
-            Aotearoa (Level 6).
+            Aotearoa (NZQA Level 6).
           </p>
           <p>
             My tech journey started with an Electronics and Communications
@@ -42,7 +41,7 @@ const About = () => {
             Now in Aotearoa, I’m back in tech with fire for creative
             problem-solving. I’m passionate about building smart, simple digital
             solutions that make life just a bit easier. Let’s build cool stuff
-            together
+            together!
           </p>
 
           <div className="interests">
