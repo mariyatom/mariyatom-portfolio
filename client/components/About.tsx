@@ -60,7 +60,12 @@ const About = () => {
           </div>
         </div>
         <div className="image-section">
-          <img src={imageSrc} alt="Profile Visual" className="profile-image" />
+          <img
+            src={imageSrc}
+            alt="Profile Visual"
+            className="profile-image"
+            data-testid="profile-image"
+          />
         </div>
       </div>
     </div>
